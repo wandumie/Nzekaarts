@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <title>nzekaartstheatre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/IcoFont/1.0.0/icofont.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/IcoFont/1.0.0/icofont.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Social Media Icons</title>
+</head>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul class="sidebar">
+            <li  onclick=hideSidebar()  ><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><img src="pics/z.jpg"></a></li>
+            <li class="hideOnMobile"><a href="home.html">HOME</a></li>
+            <li class="hideOnMobile"><a href="aboutus.html">ABOUT US</a></li>
+            <li class="hideOnMobile"><a href="blog.html">BLOG</a></li>
+            <li class="hideOnMobile"><a href="gallery.html">GALLERY</a></li>
+            <li class="hideOnMobile"><a href="contactus.html">CONTACT US</a></li>
+            <li class="menubutton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a></li>      
+            </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const  sidebar= document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hideSidebar(){
+            const  sidebar= document.querySelector('.sidebar')
+            sidebar.style.display='none'  
+        }
+    </script>
+</header>
+<div class="slideshow-container">
+  <div class="slide fade">
+    <img src="pics/rehesal.jpg" alt="Slide 1">
+    <div class="slide-text">
+      <h2> WELCOME TO THE OFFICIAL WEBSITE OF NZEKA ARTS THEATER</h2>
+      <p>Exploring talent beyond the obvious.</p>
+    </div>
+  </div>
+  <div class="slide fade">
+    <img src="pics/group1.jpg" alt="Slide 2">
+    <div class="slide-text">
+      <h2> WELCOME TO THE OFFICIAL WEBSITE OF NZEKA ARTS THEATER</h2>
+      <p>Exploring talent beyond the obvious.</p>
+    </div>
+  </div>
+  <div class="slide fade">
+    <img src="pics/nzeka4.jpg" alt="Slide 3">
+    <div class="slide-text">
+      <h2> WELCOME TO THE OFFICIAL WEBSITE OF NZEKA ARTS THEATER</h2>
+      <p>Exploring talent beyond the obvious.</p>
+    </div>
+  </div>
+
+
+</div>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    const slides = document.querySelectorAll(".slide");
+    
+    // Hide all slides
+    slides.forEach(slide => slide.style.display = "none");
+
+    // Increment slide index, reset to 0 if it's the last slide
+    slideIndex++;
+    if (slideIndex > slides.length) slideIndex = 1;
+
+    // Display the current slide with a fade effect
+    slides[slideIndex - 1].style.display = "block";
+
+    // Repeat every 3 seconds
+    setTimeout(showSlides, 3000);
+  }
+</script>
+<div class="welcome_speech">
+    <div class="wel">
+      <div class="speech">
+        <h2>Message from our director</h2>
+        <br>
+
+        <h4>Welcome you all</h4><b></b>
+        
+        <p>"<B>BULLIES</B> ARE EVERYWHERE. THEY MAKE OTHERS FEEL UNCOMFOTABLE AND WORTHLESS
+          
+       <BR></BR> </br> DISCOVER ESSENTIAL SKILLS THAT WILL YOU IN HANDLING <B>BULLIES</B>"</p>
+
+      <BR></BR>
+     <p><i><b>#Sir Harris</b></i></p>
+      </div>
+
+    </div>
+    <div class="wel">
+        <img src="pics/hhh.jpg" alt="">
+    </div>
+</div>
+<div class="cont swiper">
+  <div class="card-wrapper">
+      <ul class="card-list swiper-wrapper">
+          <li class="card-item swiper-slide">
+              <a href="" class="card-link">
+                 
+                <div class="card-image">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DyX445_EEVI?si=ItEl7KSBcBEjv1kz" 
+                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                  <p class="badge">MUSIC</p>
+                  <!-- <h2 class="card-title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea.
+                  </h2> -->
+                  <!-- <button class="card-button
+                  material-symbols-rounded">
+                      arrow_forward
+                  </button> -->
+                  
+              </a>
+          </li>
+          <li class="card-item swiper-slide">
+              <a href="" class="card-link">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MhbJBpdfZgc?si=9d-fydPNCKa0n3zQ" 
+                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                   web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <p class="badge">PERFOMANCE</p>
+                  <!-- <h2 class="card-title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea.
+                  </h2> -->
+                  <!-- <button class="card-button
+                  material-symbols-rounded">
+                      arrow_forward
+                  </button>
+                   -->
+              </a>
+          </li>
+          <li class="card-item swiper-slide">
+              <a href="" class="card-link">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xUquQaOOvvk?si=KA8L70IS1TwSp7dO" 
+                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <p class="badge">POETRY</p>
+                  <!-- <h2 class="card-title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea.
+                  </h2> -->
+                  <!-- <button class="card-button
+                  material-symbols-rounded">
+                      arrow_forward
+                  </button>
+                   -->
+              </a>
+          </li>
+          <li class="card-item swiper-slide">
+              <a href="" class="card-link">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EdcLsX1y_pQ?si=6n9PAS1GY2Ix9JJF" 
+                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                   web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <!-- <img src="image/14.jpg" alt="Card image" class="card-image"> -->
+                  <p class="badge">Drama</p>
+                  <!-- <h2 class="card-title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea.
+                  </h2>
+                  <button class="card-button
+                  material-symbols-rounded">
+                      arrow_forward
+                  </button> -->
+                  
+              </a>
+          </li>
+          <li class="card-item swiper-slide">
+              <a href="" class="card-link">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cUvR0SBIDSk?si=NZlPA8qmojvJPWhx"
+                   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                   web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <p class="badge">REHESAL</p>
+                  <!-- <h2 class="card-title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea.
+                  </h2> -->
+                  <!-- <button class="card-button
+                  material-symbols-rounded">
+                      arrow_forward
+                  </button> -->
+                  
+              </a>
+          </li>
+          <li class="card-item swiper-slide">
+              <a href="" class="card-link">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DEc24-8q4n8?si=d-XmwjgAz7UCy_kr" 
+                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <p class="badge">MUSIC</p>
+                  <!-- <h2 class="card-title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea.
+                  </h2> -->
+                  <!-- <button class="card-button
+                  material-symbols-rounded">
+                      arrow_forward
+                  </button> -->
+                  
+              </a>
+          </li>
+          <li class="card-item swiper-slide">
+              <a href="" class="card-link">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bWl6FO2lCR0?si=4bHgyvkpTN36UBti"
+                   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                   web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <p class="badge">POETRY</p>
+                  <!-- <h2 class="card-title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea.
+                  </h2> -->
+                  <!-- <button class="card-button
+                  material-symbols-rounded">
+                      arrow_forward
+                  </button> -->
+                  
+              </a>
+          </li>
+        
+          <li class="card-item swiper-slide">
+              <a href="" class="card-link">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/m5H5j7Yonb4?si=cydaO4UFIXWUhwO9"
+                   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                   web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <p class="badge">REHESAL</p>
+                  <!-- <h2 class="card-title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea.
+                  </h2> -->
+                  <!-- <button class="card-button
+                  material-symbols-rounded">
+                      arrow_forward
+                  </button> -->
+                  
+              </a>
+          </li>
+      </ul>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  </div>
+</div>
+<div class="uus">
+  <div class="us">
+    <div class="item item1">
+      <img src="icons/Hit.png" width="300px" hieght="200px" alt="">
+        <div class="card">
+          <div class="objective">
+            <h2>OUR OBJECTIVE</h2></br>
+            
+              <p>Empowering the youth by fostering the realization and utilization of their innate talents,
+                promoting cultural appreciation, and equipping them with essential life skills. We aim to 
+                educate, inform, and engage individuals on critical social issues, support academic growth, 
+                and cultivate a spirit of unity and positive behavior. By bridging generational gaps and embracing 
+                technological advancements, we strive to shape a responsible and inclusive society
+    </p>
+             
+            
+          </div>
+         </div>    
+      </div>
+
+  </div>
+</div>
+
+
+
+
+<footer>
+  <div class="mying-info">
+      <div class="map-info">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.000549878539!2d35.03710197445391!3d-15.803925023188466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d845f556d032db%3A0xc6cc47b3afa26737!2sMuseum%20of%20Malawi!5e0!3m2!1sen!2smw!4v1732648162366!5m2!1sen!2smw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div>
+              Nzeka Arts Theatre</br>
+              P.O Box 4533</br>
+              Blantyre.</br>
+          
+          </div>
+      </div>
+
+     
+
+      
+      <div class="info">
+          <h1>ABOUT US</h1>
+          <ul>
+              <li>Our Story</li>
+              <li>Located Areas</li>
+              <li>Activities</li>
+              
+          </ul>
+      </div>
+
+      
+      <div class="info">
+          <h1>SUPPORT</h1>
+          <ul>
+              <li>FAQs</li>
+              <li>Contact Us</li>
+              <li>Provided Services</li>
+             
+              <li>Comments</li>
+          </ul>
+      </div>
+
+      
+      <div class="info">
+          <h1>DEPARTMENTS</h1>
+          <ul>
+              <li>Drama</li>
+              <li>Poetry</li>
+              <li>Music</li>
+              <li>Comedy</li>
+              
+          </ul>
+      </div>
+
+      
+      <div class="info">
+          <h1>HELP</h1>
+          <ul>
+              <li>Terms & Conditions</li>
+              <li>Our Team</li>
+              <li>Support</li>
+          
+              <li>Privacy Policy</li>
+          </ul>
+      </div>
+      <div class="info">
+        <h1>FOLLOW US ON</h1>
+        <ul>
+         
+            <li> <a href="https://www.instagram.com/nzeka_arts_theatre?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <i class="fab fa-instagram" id="fa-follow"></a  ></i>INSTAGRAM</li>
+              <li> <a href="www.youtube.com/@NzekaArts"> <i class="fab fa-youtube" id="fa-follow"></a  ></i>YOUTUBE</li>
+                <li> <a href="https://chat.whatsapp.com/BxuYUeSSuUN5L6apeT6sge"> <i class="fab fa-whatsapp" id="fa-follow"></a  ></i>WHATSAPP</li>
+                  <li> <a href="https://web.facebook.com/profile.php?id=100088696857113"> <i class="fab fa-facebook-f" id="fa-follow"></a  ></i>FACEBOOK</li>
+                    <li> <a href="https://www.tiktok.com/@nzekaarts"> <i class="fab fa-tiktok" id="fa-follow"></a  ></i>TIKTOK</li>
+                 
+            
+            <li>   &copy;nzekaartstheatre.com</li>
+           
+        </ul>
+    </div>
+   
+
+  </div>
+
+  <div>
+
+  </div>
+
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>   
+</body>
+</html>

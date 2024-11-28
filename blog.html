@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <title>nzekaartstheatre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/IcoFont/1.0.0/icofont.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/IcoFont/1.0.0/icofont.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li  onclick=hideSidebar()  ><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="pics/z.jpg"></a></li>
+                <li class="hideOnMobile"><a href="home.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="aboutus.html">ABOUT US</a></li>
+                <li class="hideOnMobile"><a href="blog.html">BLOG</a></li>
+                <li class="hideOnMobile"><a href="gallery.html">GALLERY</a></li>
+                <li class="hideOnMobile"><a href="contactus.html">CONTACT US</a></li>
+                <li class="menubutton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a></li>      
+                </ul>
+        </nav>
+
+    <script>
+        function showSidebar(){
+            const  sidebar= document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hideSidebar(){
+            const  sidebar= document.querySelector('.sidebar')
+            sidebar.style.display='none'  
+        }
+    </script>
+</header>
+<body>
+    <h2 class="news-head">Arts & Theatre News</h2>
+    <div id="news-container">
+           <!-- Blog Post 1 -->
+            
+           <div class="news-item">
+            <h3>Latest Group Activities</h3>
+            <img src="pics/www.jpg" alt="Blog Post Image">
+            <div class="post-content">
+               
+                <p>Catch up on the latest happenings within our group, including recent performances and events.</p>
+               <h3><a href="https://web.facebook.com/profile.php?id=100088696857113" class="read-more">Read More</a></h3> 
+            </div>
+        </div>
+  
+    <script>
+      const apiKey = 'f08590cae5794b31b99668e7124ed155'; // Replace with your News API key
+      const apiUrl = `https://newsapi.org/v2/everything?q=arts OR theatre&apiKey=${apiKey}`;
+  
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          const newsContainer = document.getElementById('news-container');
+  
+          if (data.status === 'ok' && data.articles.length > 0) {
+            data.articles.forEach(article => {
+              const newsItem = document.createElement('div');
+              newsItem.classList.add('news-item');
+              const placeholderImage = 'path/to/placeholder.jpg'; // Replace with your placeholder image path
+              newsItem.innerHTML = `
+                <h3><a href="${article.url}" target="_blank">${article.title}</a></h3>
+                ${article.urlToImage ? `<img src="${article.urlToImage}" alt="${article.title}">` : `<img src="${placeholderImage}" alt="Placeholder Image">`}
+                <p>${article.description}</p>
+                <p>Source: ${article.source.name}</p>
+              `;
+              newsContainer.appendChild(newsItem);
+            });
+          } else {
+            newsContainer.innerHTML = '<p>No news articles found.</p>';
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching news:', error);
+          newsContainer.innerHTML = '<p>Error fetching news. Please try again later.</p>';
+        });
+    </script>
+    </div>
+<footer>
+    <div class="mying-info">
+        <div class="map-info">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.000549878539!2d35.03710197445391!3d-15.803925023188466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d845f556d032db%3A0xc6cc47b3afa26737!2sMuseum%20of%20Malawi!5e0!3m2!1sen!2smw!4v1732648162366!5m2!1sen!2smw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                Nzeka Arts Theatre</br>
+                P.O Box 4533</br>
+                Blantyre.</br>
+            
+            </div>
+        </div>
+  
+       
+  
+        
+        <div class="info">
+            <h1>ABOUT US</h1>
+            <ul>
+                <li>Our Story</li>
+                <li>Located Areas</li>
+                <li>Activities</li>
+                
+            </ul>
+        </div>
+  
+        
+        <div class="info">
+            <h1>SUPPORT</h1>
+            <ul>
+                <li>FAQs</li>
+                <li>Contact Us</li>
+                <li>Provided Services</li>
+               
+                <li>Comments</li>
+            </ul>
+        </div>
+  
+        
+        <div class="info">
+            <h1>DEPARTMENTS</h1>
+            <ul>
+                <li>Drama</li>
+                <li>Poetry</li>
+                <li>Music</li>
+                <li>Comedy</li>
+                
+            </ul>
+        </div>
+  
+        
+        <div class="info">
+            <h1>HELP</h1>
+            <ul>
+                <li>Terms & Conditions</li>
+                <li>Our Team</li>
+                <li>Support</li>
+            
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="info">
+          <h1>FOLLOW US ON</h1>
+          <ul>
+           
+            <li> <a href="https://www.instagram.com/nzeka_arts_theatre?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <i class="fab fa-instagram" id="fa-follow"></a  ></i>INSTAGRAM</li>
+                <li> <a href="www.youtube.com/@NzekaArts"> <i class="fab fa-youtube" id="fa-follow"></a  ></i>YOUTUBE</li>
+                  <li> <a href="https://chat.whatsapp.com/BxuYUeSSuUN5L6apeT6sge"> <i class="fab fa-whatsapp" id="fa-follow"></a  ></i>WHATSAPP</li>
+                    <li> <a href="https://web.facebook.com/profile.php?id=100088696857113"> <i class="fab fa-facebook-f" id="fa-follow"></a  ></i>FACEBOOK</li>
+                      <li> <a href="https://www.tiktok.com/@nzekaarts"> <i class="fab fa-tiktok" id="fa-follow"></a  ></i>TIKTOK</li>
+              <li>   &copy;nzekaartstheatre.com</li>
+             
+          </ul>
+      </div>
+     
+  
+    </div>
+  
+    <div>
+  
+    </div>
+  
+  
+  </footer>
+</body>
+</html>
