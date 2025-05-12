@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kibbutz Primary School</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <!-- Logo + School Name (visible on large screens) -->
+        <div class="logo-container">
+          <img src="TWI04053.jpg" alt="School Logo" />
+          <h1>Kibbutz Primary School</h1>
+        </div>
+
+        <!-- Hamburger Toggle -->
+        <button class="nav-toggle" id="navToggle">☰</button>
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul id="navLinks">
+            <li class="close-btn">&times;</li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admission</a></li>
+           
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+    <main>
+    <section class="admissions-section">
+      <h2>Admissions</h2>
+      <p>We welcome students from Nursery to Grade 8 and offer a nurturing environment to help every child thrive.</p>
+
+      <div class="admission-requirements">
+        <h3>Admission Requirements</h3>
+        <ul>
+          <li>Birth Certificate (copy)</li>
+          <li>Previous school report (for Grades 1–8)</li>
+          <li>Passport-sized photos</li>
+          <li>Filled admission form</li>
+        </ul>
+      </div>
+
+      <div class="application-process">
+        <h3>Application Process</h3>
+        <ol>
+          <li>Visit the school or call us for guidance.</li>
+          <li>Pick up or download the admission form.</li>
+          <li>Fill and submit the form with required documents.</li>
+          <li>Attend an interview (Grades 1–8).</li>
+          <li>Receive admission decision and join us!</li>
+        </ol>
+      </div>
+
+      <div class="important-dates">
+        <h3>Important Dates</h3>
+        <ul>
+          <li>First Term Opens: 8th January</li>
+          <li>Mid-Year Intake: 10th July</li>
+          <li>Application Deadline: 15th December</li>
+        </ul>
+      </div>
+
+      <div class="download-section">
+        <a href="#" class="download-btn">Download Admission Form (PDF)</a>
+      </div>
+    </section>
+  </main>
+
+    <!-- Footer / Contact -->
+  <footer id="contact">
+    <div class="container footer-flex">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>Sunrise Primary School is committed to nurturing bright, kind, and confident learners.</p>
+      </div>
+
+      <div class="footer-news">
+        <h4>Latest Updates</h4>
+        <ul>
+          <li>📢 School reopens on Sept 5</li>
+          <li>🎓 Grade 8 mock exams next week</li>
+          <li>🏅 Sports Day photos uploaded</li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Send Us Feedback</h4>
+        <form action="submit_feedback.php" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
+         <button type="button" onclick="sendToWhatsapp()">send message</button>
+        </form>
+      </div>
+    </div>
+   <p>© 2025 Kibbutz Primary School</p>
+  </footer>
+
+  <!-- JS for Hamburger -->
+  <script src="script.js"></script>
+  
+</body>
+</html>

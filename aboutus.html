@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kibbutz Primary School</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <!-- Logo + School Name (visible on large screens) -->
+        <div class="logo-container">
+          <img src="TWI04053.jpg" alt="School Logo" />
+          <h1>Kibbutz Primary School</h1>
+        </div>
+
+        <!-- Hamburger Toggle -->
+        <button class="nav-toggle" id="navToggle">☰</button>
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul id="navLinks">
+            <li class="close-btn">&times;</li>
+           <li><a href="index.php">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admission</a></li>
+            
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+    <main>
+    <section class="about-section">
+      <h2>Welcome to School Name</h2>
+      <p>We are committed to shaping bright futures through quality education and nurturing guidance.</p>
+
+      <div class="about-details">
+        <div>
+          <h3>Our Mission</h3>
+          <p>To provide a safe, inclusive, and supportive learning environment that encourages all students to reach their full potential.</p>
+        </div>
+        <div>
+          <h3>Our Vision</h3>
+          <p>To be a leading institution where learners grow into responsible, knowledgeable, and innovative citizens of tomorrow.</p>
+        </div>
+        <div class="admission-requirements">
+        <h3>Our Core Values</h3>
+        <ul>
+          <li>Integrity</li>
+          <li>Innovation</li>
+          <li> Respect</li>
+          <li>Excellence</li>
+            <li>   Community</li>
+        </ul>
+         </div>
+        
+        <div>
+          <h3>Our History</h3>
+          <p>Founded in 2005, our school has grown from a modest nursery to a vibrant institution serving learners up to Grade 8.</p>
+        </div>
+        <div>
+          <h3>Message from the Head Teacher</h3>
+          <p>“We believe every child can learn, just not on the same day or in the same way. Our role is to unlock their unique potential.”</p>
+        </div>
+      </div>
+
+      <div class="team-section">
+        <h3>Meet Our Team</h3>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="Whatsapp Status Data/0da432a032084cc9995c2e149cdd51e0.jpg" alt="Teacher 1">
+            <p>Mrs. Jane Banda<br>Head Teacher</p>
+          </div>
+          <div class="team-member">
+            <img src="Whatsapp Status Data/MIE.jpg" alt="Teacher 2">
+            <p>Mr. John Mwale<br>Deputy Head</p>
+          </div>
+          <div class="team-member">
+            <img src="Whatsapp Status Data/waa2.jpg" alt="Teacher 3">
+            <p>Ms. Grace Phiri<br>Nursery Teacher</p>
+          </div>
+          <div class="team-member">
+            <img src="Whatsapp Status Data/waa1.jpg" alt="Teacher 4">
+            <p>Mr. Peter Zulu<br>Grade 5 Teacher</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+    <!-- Footer / Contact -->
+  <footer id="contact">
+    <div class="container footer-flex">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>Sunrise Primary School is committed to nurturing bright, kind, and confident learners.</p>
+      </div>
+
+      <div class="footer-news">
+        <h4>Latest Updates</h4>
+        <ul>
+          <li>📢 School reopens on Sept 5</li>
+          <li>🎓 Grade 8 mock exams next week</li>
+          <li>🏅 Sports Day photos uploaded</li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Send Us Feedback</h4>
+        <form action="submit_feedback.php" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
+          <button type="button" onclick="sendToWhatsapp()">send message</button>
+        </form>
+      </div>
+    </div>
+   <p>© 2025 Kibbutz Primary School</p>
+  </footer>
+
+  <!-- JS for Hamburger -->
+   <script src="script.js"></script>
+  
+</body>
+</html>
