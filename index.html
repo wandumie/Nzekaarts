@@ -28,7 +28,7 @@
         <nav>
           <ul id="navLinks" data-aos="fade-left">
             <li class="close-btn">&times;</li>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="aboutus.html">About</a></li>
             <li><a href="academics.html">Academics</a></li>
             <li><a href="admissions.html">Admission</a></li>
@@ -89,22 +89,7 @@
   <!-- View & Download PDFs -->
  <section class="downloads" id="resources" data-aos="fade-up">
   <div class="downloads-container">
-    <h2>Academic Results</h2>
-    <ul>
-       <?php
-      $dir = "uploads/";
-      $files = scandir($dir);
-
-      foreach ($files as $file) {
-        if ($file !== '.' && $file !== '..' && pathinfo($file, PATHINFO_EXTENSION) === 'pdf') {
-          echo "<li>
-                  <strong>$file</strong><br>
-                  <a href='$dir$file' target='_blank'>View</a> |
-                  <a href='$dir$file' download>Download</a>
-                </li>";
-        }
-      }
-      ?> 
+  
     </ul>
   </div>
 </section>
