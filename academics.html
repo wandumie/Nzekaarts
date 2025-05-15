@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kibbutz Primary School</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <!-- Logo + School Name (visible on large screens) -->
+        <div class="logo-container">
+          <img src="TWI04053.jpg" alt="School Logo" />
+          <h1>Kibbutz <br>Primary School</h1>
+        </div>
+
+        <!-- Hamburger Toggle -->
+        <button class="nav-toggle" id="navToggle">☰</button>
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul id="navLinks" data-aos="fade-left">
+            <li class="close-btn">&times;</li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admission</a></li>
+           
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Academics Section -->
+ <main>
+  <section id="academics" class="academics-section">
+  <div class="overlay-wrapper" data-aos="fade-right">
+    <div class="well">
+  <h2>Our Academic Programs</h2>
+    <p class="section-intro" data-aos="fade-up">
+      We offer a rich, age-appropriate curriculum that nurtures curiosity, creativity, and confidence from nursery through Grade 8.
+    </p><br></br>
+    </div>
+  
+
+    <div class="academic-levels" data-aos="fade-down">
+      <div class="level-card">
+        <h3>Nursery</h3>
+        <p>Early childhood education focusing on play, language development, social skills, and motor coordination.</p>
+      </div>
+      <div class="level-card">
+        <h3>Grades 1–3</h3>
+        <p>Foundation in reading, writing, math, and life skills. Encouraging exploration and a love for learning.</p>
+      </div>
+      <div class="level-card">
+        <h3>Grades 4–5</h3>
+        <p>Emphasis on core subjects with added focus on science, social studies, and technology introduction.</p>
+      </div>
+      <div class="level-card">
+        <h3>Grades 6–8</h3>
+        <p>Advanced concepts, exam preparation, and personal development. Laying the groundwork for secondary education.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+  <!-- Footer -->
+   <footer id="contact">
+    <div class="container footer-flex">
+  <div class="footer-about" data-aos="fade-up" data-aos-delay="100">
+        <h4>About Us</h4>
+        <p>Kibbutz Primary School is committed to nurturing bright, kind, and confident learners.</p>
+      </div>
+
+      <div class="footer-news" data-aos="fade-up" data-aos-delay="100">
+        <h4>Latest Updates📢</h4>
+        <ul>
+          <li> School reopens on Sept 5</li>
+          <li> Grade 8 mock exams next week</li>
+          
+        </ul>
+      </div>
+
+    <div class="footer-contact" data-aos="fade-up" data-aos-delay="300">
+  <h4>We would like to hear from you</h4>
+  <form action="" method="post">
+    <input type="text" name="name" id="name" placeholder="Your Name" required>
+    <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+    <textarea name="message" id="message" rows="3" placeholder="Your Message" required></textarea>
+
+    <button type="button" onclick="sendToWhatsapp()">Send Message via WhatsApp</button>
+
+    <!-- Email Display -->
+    <p style="margin-top: 10px;">Or email us: <a href="mailto:info@kibbutzschool.org">info@kibbutzschool.org</a></p>
+  </form>
+
+  <!-- Social Media Icons -->
+  <div class="social-icons">
+    <a href="https://facebook.com/kibbutzschool" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://wa.me/265883696918" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/kibbutzschool" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</div>
+
+
+ 
+
+
+  </footer>
+    <p class="yeye">© 2025 Kibbutz Primary School</p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000,offset: 100 });
+   </script>
+  <!-- JS for Hamburger -->
+  <script src="script.js"></script>
+  
+</body>
+</html>

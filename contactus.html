@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kibbutz Primary School</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <!-- Logo + School Name (visible on large screens) -->
+        <div class="logo-container">
+          <img src="TWI04053.jpg" alt="School Logo" />
+          <h1>Kibbutz <br>Primary School</h1>
+        </div>
+
+        <!-- Hamburger Toggle -->
+        <button class="nav-toggle" id="navToggle">☰</button>
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul id="navLinks" data-aos="fade-left">
+            <li class="close-btn">&times;</li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admission</a></li>
+           
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+ <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-info" data-aos="fade-right">
+    <p><i class="fas fa-map-marker-alt" data-aos="fade-right"></i> <strong>Address:</strong> Blantyre, Bangwe</p><br>
+
+       <p><i class="fas fa-phone-alt" data-aos="fade-up" ></i> <strong>Phone:</strong> +265 123 456 789</p><br>
+       <p><i class="fas fa-envelope" data-aos="fade-left"></i> <strong>Email:</strong> info@kibbutzschool.org</p><br></br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.3323533237403!2d35.0830473661503!3d-15.839120067021767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d84900c124e85b%3A0xd85658eb1e09f426!2sEMPEROR&#39;S%20EXECUTIVE%20LODGE!5e0!3m2!1sen!2smw!4v1747312292386!5m2!1sen!2smw"
+        width="100%" height="300" frameborder="0" padding-top="20px" style="border:0;" allowfullscreen></iframe> 
+      </div>
+
+      <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
+        <h3><strong>Send us your feedback below</strong></h3>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="button" onclick="sendToWhatsapp()">Send Message via WhatsApp</button>
+      </form>
+    </section>
+  </main>
+  <footer id="contact">
+    <div class="container footer-flex">
+  <div class="footer-about" data-aos="fade-up" data-aos-delay="100">
+        <h4>About Us</h4>
+        <p>Kibbutz Primary School is committed to nurturing bright, kind, and confident learners.</p>
+      </div>
+
+      <div class="footer-news" data-aos="fade-up" data-aos-delay="100">
+        <h4>Latest Updates📢</h4>
+        <ul>
+          <li> School reopens on Sept 5</li>
+          <li> Grade 8 mock exams next week</li>
+          
+        </ul>
+      </div>
+
+    <div class="footer-contact" data-aos="fade-up" data-aos-delay="300">
+  <h4>We would like to hear from you</h4>
+  <form action="" method="post">
+    <input type="text" name="name" id="name" placeholder="Your Name" required>
+    <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+    <textarea name="message" id="message" rows="3" placeholder="Your Message" required></textarea>
+
+    <button type="button" onclick="sendToWhatsapp()">Send Message via WhatsApp</button>
+
+    <!-- Email Display -->
+    <p style="margin-top: 10px;">Or email us: <a href="mailto:info@kibbutzschool.org">info@kibbutzschool.org</a></p>
+  </form>
+
+  <!-- Social Media Icons -->
+  <div class="social-icons">
+    <a href="https://facebook.com/kibbutzschool" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://wa.me/265883696918" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/kibbutzschool" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</div>
+
+
+  </footer>
+    <p class="yeye">© 2025 Kibbutz Primary School</p>
+
+  <!-- JS for Hamburger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000,offset: 100 });
+   </script>
+  <!-- JS for Hamburger -->
+  <script src="script.js"></script>
+  
+</body>
+</html>

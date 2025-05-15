@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kibbutz Primary School</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <style>
+    /* Inline fix for demo; move to styles.css */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      transition: 0.3s ease-in-out;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    .nav-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        background: #fff;
+        width: 100%;
+        padding: 20px;
+        z-index: 999;
+      }
+
+      nav ul.show {
+        left: 0;
+      }
+
+      nav ul li.close-btn {
+        text-align: right;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-container img {
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <div class="logo-container">
+          <img src="TWI04053.jpg" alt="School Logo" />
+          <h1>Kibbutz <br>Primary School</h1>
+        </div>
+        <button class="nav-toggle" id="navToggle">☰</button>
+        <nav>
+          <ul id="navLinks">
+            <li class="close-btn" id="closeBtn">&times;</li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admission</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home" data-aos="fade-in">
+    <div class="container">
+      <h2>Welcome to Kibbutz Primary School</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, veniam?</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" data-aos="fade-right">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Us</h2>
+        <p>We nurture curious, creative, and confident learners.</p>
+      </div>
+      <p>Kibbutz Primary School has been serving the community for over 20 years with a mission to provide quality education in a joyful and inclusive environment.</p>
+    </div>
+  </section>
+
+  <!-- Academics -->
+  <section class="highlights" id="academics" data-aos="zoom-in">
+    <div class="section-title">
+      <h2>Our Classes</h2>
+    </div>
+    <div class="container">
+      <div class="box">
+        <h3>Nursery & Early Years</h3>
+        <p>Safe, fun, and creative environment for the little ones.</p>
+      </div>
+      <div class="box">
+        <h3>Primary Classes</h3>
+        <h4>Junior Classes</h4>
+        <p>From Grade 1 to 4. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="box">
+        <h3>Primary Classes</h3>
+        <h4>Senior Classes</h4>
+        <p>From Grade 5 to 8. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="box">
+        <h3>Extra-Curricular</h3>
+        <p>Music, sports, and creativity to develop the whole child.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads -->
+  <section class="downloads" id="resources" data-aos="fade-up">
+    <div class="downloads-container">
+      <h2>Academic Results</h2>
+      <ul>
+        <li><a href="#">Grade 8 Results - 2024</a></li>
+        <li><a href="#">Mid-Year Reports - 2024</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Admissions -->
+  <section id="admissions" data-aos="fade-left">
+    <div class="container">
+      <div class="section-title">
+        <h2>Admissions</h2>
+      </div>
+      <p>We welcome all families to visit us and learn more. Please collect and return admission forms to the school office. Contact us for fee details.</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="carousel-section" cc>
+    <div class="container">
+      <div class="section-title">
+        <h2>Life at Our School</h2>
+        <p>Explore our infrastructure, students, and school activities</p>
+      </div>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn left" onclick="scrollCarousel(-1)">❮</button>
+        <div class="carousel" id="photoCarousel">
+          <div class="carousel-item"><img src="images/4.jpg" alt="School Building"><p>School Building</p></div>
+          <div class="carousel-item"><img src="images/6.jpg" alt="Student Life"><p>Student Life</p></div>
+          <div class="carousel-item"><img src="images/6.jpg" alt="Classroom"><p>Classroom Activities</p></div>
+          <div class="carousel-item"><img src="images/6.jpg" alt="Playground"><p>Playground</p></div>
+        </div>
+        <button class="carousel-btn right" onclick="scrollCarousel(1)">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container footer-flex">
+      <div class="footer-about" data-aos="fade-up" data-aos-delay="100">
+        <h4>About Us</h4>
+        <p>Kibbutz Primary School is committed to nurturing bright, kind, and confident learners.</p>
+      </div>
+      <div class="footer-news" data-aos="fade-up" data-aos-delay="200">
+        <h4>Latest Updates📢</h4>
+        <ul>
+          <li>School reopens on Sept 5</li>
+          <li>Grade 8 mock exams next week</li>
+        </ul>
+      </div>
+      <div class="footer-contact" data-aos="fade-up" data-aos-delay="300">
+        <h4>We would like to hear from you</h4>
+        <form>
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+          <textarea id="message" rows="3" placeholder="Your Message" required></textarea>
+          <button type="button" onclick="sendToWhatsapp()">Send Message via WhatsApp</button>
+          <p style="margin-top: 10px;">Or email us: <a href="mailto:info@kibbutzschool.org">info@kibbutzschool.org</a></p>
+        </form>
+        <div class="social-icons">
+          <a href="https://facebook.com/kibbutzschool" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/265883696918" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com/kibbutzschool" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="yeye">© 2025 Kibbutz Primary School</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, offset: 100 });
+
+    // Hamburger Toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    const closeBtn = document.getElementById('closeBtn');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.add('show');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+    });
+
+    // Carousel scroll
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById('photoCarousel');
+      const scrollAmount = 300;
+      carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+
+    // WhatsApp contact
+    function sendToWhatsapp() {
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const message = document.getElementById("message").value;
+      const url = `https://wa.me/265883696918?text=Hello, my name is ${name}. Phone: ${phone}. Message: ${message}`;
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
+
+
